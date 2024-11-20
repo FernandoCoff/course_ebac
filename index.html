@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pr-br" id="root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/cc5f700981.js" crossorigin="anonymous"></script>
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <header class="form-header">
+            <div class="title">
+                <h2>LOGIN</h2>
+            </div>
+            <div class="mode-colors">
+                <button id="mode-colors"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </header>
+        <form class="form-body" id="form">
+            <div class="input-item">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="input-item">
+                <div class="text">
+                    <label for="password">Senha</label>
+                    <a class="links" href="#">Esqueceu sua Senha?</a>
+                </div>
+                <input type="password" name="password" id="password" placeholder="Senha">
+            </div>
+            <div class="input-item check">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">Lembar de mim</label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="form-footer">
+            <p>Precisando de uma conta? <a class="links" href="#">Registre-se</a></p>
+        </div>
+    </div> 
+</body>
+</html>
