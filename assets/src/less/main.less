@@ -1,0 +1,122 @@
+// RESET
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #202020;
+}
+
+.container{
+    background-color: #262626;
+    width: 30rem;
+    padding: 2rem;
+    color: #eee;
+    border-radius: 7px;
+
+    h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    label{
+        font-weight: 300;
+        font-size: 0.875rem;
+
+    }
+
+    input{
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid #eeeeee86;
+        color: #eee;
+
+        -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+        &::placeholder{
+            font-size: 1rem;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    button{
+        width: 100%;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 10px;
+        color: #eee;
+        background-color: #5397fd;
+        transition: 0.6s;
+
+        &:hover{
+            background-color: lighten(#5397fd, 5%);
+        }
+    }
+}
+
+.resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h3{
+        font-weight: 400;
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+    }
+
+    span{
+        color: #5397fd;
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 500px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}  
